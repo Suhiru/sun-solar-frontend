@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "sun-solar-client"
+    }
+  },
+  "defaultProject": "sun-solar-client",
+  "cli": {
+    "analytics": "8413f658-5e4a-47e4-a798-41c296fea78f"
+  }
 }

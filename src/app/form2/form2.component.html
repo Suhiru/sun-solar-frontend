@@ -1,0 +1,58 @@
+ 
+  <form action="">
+    <h1 id="litheader">Project Details</h1>
+    <div class="form-group" >
+      <p>
+        <input type="number" name="customerId" [(ngModel)]="project.customerId" id="customerId" placeholder="Customer Id">
+      </p>
+      <p>
+        <input type="number" name="capacity" [(ngModel)]="project.capacity" id="capacity" placeholder="Capacity(KW)">
+      </p>
+      <p>
+        <input type="text" name="geoLocation" [(ngModel)]="project.geoLocation" id="geoLocation" placeholder="Location">
+      </p>
+
+      <p>
+        <input type="text" name="visitedBy" [(ngModel)]="project.visitedBy" id="visitedBy" placeholder="Visited By">
+      </p>
+
+      <p>
+        <label for="cars">Select Visited Date:</label>
+        <input type="date" name="visitedDate" [(ngModel)]="project.visitedDate" id="visitedDate" placeholder="visited Date">
+      </p>
+
+      <p>
+        <label for="connectionType">Choose Connection Type:</label>
+        <select name="connectionType" id="connectionType" [(ngModel)]="project.connectionType">
+        <option value="Net_Metering">Net Metering</option>
+        <option value="Net_Accouting">Net Accouting</option>
+        <option value="Net_Plus">Net Plus</option>
+        </select>
+      </p>
+
+      <p>
+        <label for="gridType">Choose Grid Type:</label>
+        <select name="connectionType" id="connectionType" [(ngModel)]="project.gridType">
+        <option value="LECO">LECO</option>
+        <option value="CBE">CBE</option>
+        </select>
+      </p>
+
+      <p>
+        <label for="paymentBase">Choose Payment Base:</label>
+        <select name="paymentBase" id="paymentBase" [(ngModel)]="project.paymentBase">
+        <option value="Cash">Cash</option>
+        <option value="ADB Loan">ADB Loan</option>
+        <option value="Normal Loan">Normal Loan</option>
+        </select>
+      </p>
+    </div>
+
+    <p class="p-container">
+      <input type="submit" name="Submit" id="go" value="Submit" (click)="insertProj()">
+    </p>
+
+    <p class="p-container">
+      <input type="submit" name="Submit" id="go" value="Back" (click)="back()">
+    </p>
+  </form>

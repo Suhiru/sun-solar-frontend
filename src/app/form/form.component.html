@@ -1,0 +1,36 @@
+
+
+ 
+  <form action="">
+    <h1 id="litheader">Customer Details</h1>
+    <div class="form-group" >
+      <p>
+        <input type="number" name="id" [(ngModel)]="customer.id" id="id" placeholder="user id">
+      </p>
+      <p>
+        <input type="text" name="name" [(ngModel)]="customer.name" id="name" placeholder="name">
+      </p>
+      <p>
+        <input type="text" name="address" [(ngModel)]="customer.address" id="address" placeholder="address">
+      </p>
+
+      <p>
+        <input type="text" name="profession" [(ngModel)]="customer.profession" id="profession" placeholder="profession">
+      </p>
+
+      <p>
+        <input type="text" name="referredBy" [(ngModel)]="customer.referredBy" id="referredBy" placeholder="referredBy">
+      </p>
+
+      <p>
+        <input type="text" name="number" [(ngModel)]="customer.number" id="number" placeholder="Phone Number">
+      </p>
+
+      <p>
+        <input type="text" name="email" [(ngModel)]="customer.email" id="email" placeholder="Email Address">
+      </p>
+    </div>
+    <p class="p-container">
+      <input type="submit" name="Submit" id="go" value="Submit" (click)="insertCus()">
+    </p>
+  </form>
